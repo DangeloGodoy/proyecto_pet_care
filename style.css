@@ -216,6 +216,51 @@ header {
     }
 }
 
+@media(max-width: 320px) {
+    header {
+        height: 50px;
+        padding: 5px;
+    }
+
+    .navegador {
+        gap: 8px;
+    }
+
+    .navegador-link {
+        width: 20px;
+        height: 8px;
+        padding: 1px;
+        font-size: 3px;
+    }
+
+    .logo {
+        width: 20px;
+    }
+
+    .logo-page {
+        width: 15px;
+        height: 15px;
+    }
+
+    .urgencia {
+        width: 30px;
+    }
+
+    .urgencia-servicio {
+        font-size: 5px;
+    }
+
+    .urgencia-atencion {
+        padding: 0px 3px;
+        font-size: 4px;
+    }
+
+    .urgencia-celular {
+        padding: 1.5px 3px;
+        font-size: 3px;
+    }
+}
+
 /* Config footer */
 
 .footer {
