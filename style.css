@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', 'Arial';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 120px;
+    min-height: 100vh;
+}
+
+/* Config Header */
+header {
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-page {
+    width: 120px;
+    height: 120px;
+    mix-blend-mode: darken;
+}
+
+.navegador {
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.navegador-link {
+    width: 140px;
+    height: 30px;
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navegador-link:hover {
+    background-color: rgb(96, 96, 96);
+}
+
+.urgencia {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+    width: 250px;
+}
+
+.urgencia-servicio {
+    color: red;
+    padding: 3px;
+    font-size: 22px;
+}
+
+.urgencia-atencion {
+    color: rgb(254, 97, 97);
+    padding: 3px;
+}
+
+.urgencia-celular {
+    font-size: 13px;
+    color: rgb(75, 74, 74);
+    padding: 3px;
+}
+
+/* Config footer */
+
+.footer {
+    background: rgb(220, 220, 220);
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-self: first baseline;
+    justify-content: space-evenly;
+}
+
+.footer-logo {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-logo-page {
+    width: inherit;
+    height: inherit;
+    mix-blend-mode: darken;
+}
+
+.footer-urgen {
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-urgen-emer {
+    color: red;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.footer-urgen-atencion {
+    color: rgb(254, 97, 97);
+    padding: 3px;
+    font-size: 10px;
+}
+
+.footer-copy {
+    display: flex;
+    align-items: end;
+    justify-items: center;
+}
+
+.footer-copy-copyright {
+    color: rgb(63, 63, 63);
+    width: 100%;
+    font-size: 10px;
+}
+
+/* pagina contacto */
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto-titulo {
+    font-size: 24px;
+    color: rgb(43, 43, 66)
+}
+
+.contacto-subtitulo {
+    font-size: 15px;
+    color: rgb(43, 43, 66);
+    font-weight: normal;
+    padding: 3px 0px;
+}
+
+.contacto-formulario {
+    width: 500px;
+    padding: 20px;
+}
+
+.form-contacto {
+    margin: 20px auto 40px auto;
+}
+
+.form-contacto-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.form-contacto-label,
+.form-contacto-input {
+    font-size: 15px;
+}
+
+.form-boton {
+    background-color: gray;
+    color: white;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.contacto-ubicacion {
+    width: 500px;
+    padding: 20px;
+}
+
+.contacto-ubicacion-map {
+    margin: 20px auto 40px auto;
+    width: 100%;
+    height: 356px;
+}
+
+/* pagina servicios */
+
+.descripción-servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px;
+}
+
+.nuestros-servicios {
+    padding: 20px 0px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 30;
+    font-size: 60px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    background: rgb(239, 239, 239);
+    width: 250px;
+    transition-duration: 0.5s;
+}
+
+.color-1 {
+    border-top: 13px solid orangered;
+}
+
+.color-1:hover {
+    rotate: 8deg;
+}
+
+.color-2 {
+    border-top: 13px solid rgb(47, 47, 255);
+}
+
+.color-2:hover {
+    rotate: 8deg;
+}
+
+.color-3 {
+    border-top: 13px solid rgb(253, 232, 37);
+}
+
+.color-3:hover {
+    rotate: 8deg;
+}
+
+.servicio-1 {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.servicio-2 {
+    padding: 10px
+}
+
+.titulo-servicio {
+    font-size: 20px;
+}
+
+.titulo-servicio:hover {
+    color: rgb(93, 92, 92);
+}
+
+.lista-servicio {
+    list-style: none;
+    padding: 2px 0px;
+    font-size: 15px;
+}
+
+/*  */
+
+.box-service {
+    width: 250px;
+    height: 100px;
+    border: solid 3px black;
+    margin: 3px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.img_clinica1 {
+    width: 300px;
+    height: 200px;
+}
+
+.img_clinica2 {
+    width: 300px;
+    height: 200px;
+}
+
+.service_urgency_footer_1 {
+    font-size: 20px;
+    color: red;
+}
+
+.service_urgency_footer_2 {
+    font-size: 15px;
+    color: rgb(249, 130, 130);
+}
+
+.medico-1 {
+    font-size: 20px;
+}
+
+.medico-1-p {
+    font-size: 10px;
+}
+
+.medico-2 {
+    font-size: 20px;
+}
+
+.medico-2-p {
+    font-size: 10px;
+}
+
+.medico-3 {
+    font-size: 20px;
+}
+
+.medico-3-p {
+    font-size: 10px;
+}
+
+.h3-ubicacion {
+    font-size: 30px;
+}
+
+.p-ubicacion {
+    font-size: 15px;
+}
+
+.title-service {
+    font-size: 20px;
+}
+
+.bienvenida-index {
+    font-size: 30px;
+}
+
+.h3-index {
+    font-size: 20px;
+}
