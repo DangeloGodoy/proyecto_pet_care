@@ -24,11 +24,12 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    transition-duration: 1s;
 }
 
 .logo {
     width: 160px;
-    height: 160px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,17 +39,18 @@ header {
     width: 120px;
     height: 120px;
     mix-blend-mode: darken;
+    transition-duration: 1s;
 }
 
 .navegador {
     gap: 20px;
     display: flex;
     justify-content: space-around;
-    width: 600px;
+    width: auto;
 }
 
 .navegador-link {
-    width: 140px;
+    width: 100px;
     height: 30px;
     padding: 10px;
     font-size: 13px;
@@ -59,6 +61,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition-duration: 0.8s;
 }
 
 .navegador-link:hover {
@@ -70,7 +73,7 @@ header {
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    height: 160px;
+    height: 100%;
     width: 250px;
 }
 
@@ -78,17 +81,139 @@ header {
     color: red;
     padding: 3px;
     font-size: 22px;
+    transition-duration: 0.8s;
 }
 
 .urgencia-atencion {
     color: rgb(254, 97, 97);
     padding: 3px;
+    transition-duration: 0.8s;
 }
 
 .urgencia-celular {
     font-size: 13px;
     color: rgb(75, 74, 74);
     padding: 3px;
+    transition-duration: 0.8s;
+    font-weight: normal;
+}
+
+@media(max-width: 1024px) {
+    header {
+        height: 160px;
+    }
+
+    .navegador-link {
+        width: 80px;
+        height: 25px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo-page {
+        width: 90px;
+        height: 90px;
+    }
+
+    .urgencia {
+        width: 150px;
+    }
+
+    .urgencia-servicio {
+        font-size: 16px;
+    }
+
+    .urgencia-atencion {
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .urgencia-celular {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 768px) {
+    header {
+        height: 120px;
+    }
+
+    .navegador-link {
+        width: 60px;
+        height: 18px;
+        padding: 10px;
+        font-size: 8px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo-page {
+        width: 60px;
+        height: 60px;
+    }
+
+    .urgencia {
+        width: 100px;
+    }
+
+    .urgencia-servicio {
+        font-size: 13px;
+    }
+
+    .urgencia-atencion {
+        padding: 3px;
+        font-size: 8px;
+    }
+
+    .urgencia-celular {
+        font-size: 7px;
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        height: 80px;
+    }
+
+    .navegador-link {
+        width: 30px;
+        height: 10px;
+        padding: 3px;
+        font-size: 5px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .logo-page {
+        width: 35px;
+        height: 35px;
+    }
+
+    .urgencia {
+        width: 60px;
+    }
+
+    .urgencia-servicio {
+        font-size: 10px;
+    }
+
+    .urgencia-atencion {
+        padding: 0px 3px;
+        font-size: 6px;
+    }
+
+    .urgencia-celular {
+        padding: 1.5px 3px;
+        font-size: 5px;
+    }
 }
 
 /* Config footer */
@@ -295,7 +420,7 @@ header {
     font-size: 15px;
 }
 
-/*  */
+/* configuracion responsive */
 
 .box-service {
     width: 250px;
