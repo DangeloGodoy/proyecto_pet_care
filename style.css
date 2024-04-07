@@ -68,6 +68,11 @@ header {
     background-color: rgb(96, 96, 96);
 }
 
+.deshabilitar {
+    /* pointer-events: none; */
+    cursor: not-allowed;
+}
+
 .urgencia {
     display: flex;
     align-items: flex-start;
