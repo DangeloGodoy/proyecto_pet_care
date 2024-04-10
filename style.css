@@ -181,7 +181,7 @@ header {
     }
 }
 
-@media(max-width: 480px) {
+@media(max-width: 580px) {
     header {
         height: 80px;
     }
@@ -243,8 +243,8 @@ header {
     }
 
     .logo-page {
-        width: 15px;
-        height: 15px;
+        width: 30px;
+        height: 30px;
     }
 
     .urgencia {
@@ -278,6 +278,7 @@ header {
     display: flex;
     justify-self: first baseline;
     justify-content: space-evenly;
+    transition-duration: 0.5s;
 }
 
 .footer-logo {
@@ -292,6 +293,7 @@ header {
     width: inherit;
     height: inherit;
     mix-blend-mode: darken;
+    transition-duration: 0.5s;
 }
 
 .footer-urgen {
@@ -306,12 +308,14 @@ header {
     color: red;
     padding: 3px;
     font-size: 15px;
+    transition-duration: 0.5s;
 }
 
 .footer-urgen-atencion {
     color: rgb(254, 97, 97);
     padding: 3px;
     font-size: 10px;
+    transition-duration: 0.5s;
 }
 
 .footer-copy {
@@ -324,6 +328,103 @@ header {
     color: rgb(63, 63, 63);
     width: 100%;
     font-size: 10px;
+    transition-duration: 0.5s;
+}
+
+@media(max-width: 1024px) {
+    .footer {}
+
+    .footer-logo {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer-urgen-emer {
+        font-size: 10px;
+    }
+
+    .footer-urgen-atencion {
+        font-size: 8px;
+    }
+
+    .footer-copy-copyright {
+        font-size: 7px;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer {
+        height: 80px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .footer-urgen-emer {
+        font-size: 9px;
+    }
+
+    .footer-urgen-atencion {
+        font-size: 7px;
+    }
+
+    .footer-copy-copyright {
+        font-size: 6px;
+    }
+}
+
+@media(max-width: 580px) {
+    .footer {
+        height: 50px;
+        width: 100%;
+        padding: 3px;
+    }
+
+    .footer-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer-urgen-emer {
+        font-size: 6px;
+    }
+
+    .footer-urgen-atencion {
+        font-size: 5px;
+    }
+
+    .footer-copy-copyright {
+        font-size: 4px;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer {
+        height: 50px;
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: 35px;
+        height: 35px;
+        padding: 0px 5px;
+    }
+
+    .footer-urgen-emer {
+        font-size: 4.5px;
+    }
+
+    .footer-urgen-atencion {
+        font-size: 4px;
+    }
+
+    .footer-copy-copyright {
+        font-size: 3px;
+    }
 }
 
 /* pagina contacto */
@@ -335,7 +436,8 @@ header {
 
 .contacto-titulo {
     font-size: 24px;
-    color: rgb(43, 43, 66)
+    color: rgb(43, 43, 66);
+    transition-duration: .8s;
 }
 
 .contacto-subtitulo {
@@ -343,11 +445,14 @@ header {
     color: rgb(43, 43, 66);
     font-weight: normal;
     padding: 3px 0px;
+    transition-duration: .8s;
 }
 
-.contacto-formulario {
+.contacto-formulario,
+.contacto-ubicacion {
     width: 500px;
     padding: 20px;
+    transition-duration: .8s;
 }
 
 .form-contacto {
@@ -362,8 +467,10 @@ header {
 }
 
 .form-contacto-label,
-.form-contacto-input {
+.form-contacto-input,
+.form-contacto-select {
     font-size: 15px;
+    transition-duration: .8s;
 }
 
 .form-boton {
@@ -373,17 +480,140 @@ header {
     padding: 10px;
     width: 100%;
     border-radius: 6px;
+    font-size: 15px;
+    transition-duration: 0.4s;
 }
 
-.contacto-ubicacion {
-    width: 500px;
-    padding: 20px;
+.form-boton:hover {
+    background-color: rgb(95, 95, 95)
 }
 
 .contacto-ubicacion-map {
     margin: 20px auto 40px auto;
     width: 100%;
     height: 356px;
+}
+
+@media(max-width: 1024px) {
+    .contacto-titulo {
+        font-size: 20px;
+    }
+
+    .contacto-subtitulo {
+        font-size: 12px;
+    }
+
+    .contacto-formulario,
+    .contacto-ubicacion {
+        width: 450px;
+        padding: 20px;
+    }
+
+    .form-contacto-label,
+    .form-contacto-input,
+    .form-contacto-select {
+        font-size: 12px;
+    }
+
+    .form-boton {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 768px) {
+    .contacto {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-titulo {
+        font-size: 18px;
+    }
+
+    .contacto-subtitulo {
+        font-size: 10px;
+    }
+
+    .contacto-formulario,
+    .contacto-ubicacion {
+        width: 350px;
+        padding: 17px;
+    }
+
+    .form-contacto-label,
+    .form-contacto-input,
+    .form-contacto-select {
+        font-size: 10px;
+    }
+
+    .form-boton {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 580px) {
+    .contacto-titulo {
+        font-size: 15px;
+    }
+
+    .contacto-subtitulo {
+        font-size: 9px;
+    }
+
+    .contacto-formulario,
+    .contacto-ubicacion {
+        width: 350px;
+        padding: 0px 17px;
+    }
+
+    .form-contacto-label,
+    .form-contacto-input,
+    .form-contacto-select {
+        font-size: 9px;
+    }
+
+    .form-boton {
+        font-size: 9px;
+    }
+}
+
+@media(max-width: 320px) {
+    .contacto-titulo {
+        font-size: 10px;
+    }
+
+    .contacto-subtitulo {
+        font-size: 6px;
+    }
+
+    .contacto-formulario,
+    .contacto-ubicacion {
+        width: 250px;
+        padding: 0px 17px;
+    }
+
+    .contacto-formulario {
+        padding-top: 6px;
+    }
+
+    .form-contacto-grupo {
+        gap: 3px;
+        margin: 5px 0px;
+    }
+
+    .form-contacto-label,
+    .form-contacto-input,
+    .form-contacto-select {
+        font-size: 6px;
+    }
+
+    .form-boton {
+        font-size: 6px;
+        height: 14px;
+        padding: 3px
+    }
 }
 
 /* pagina servicios */
@@ -512,7 +742,8 @@ header {
     font-size: 30px;
 }
 
-.nuestra-clinica-parrafo, .vison-mision-parrafo {
+.nuestra-clinica-parrafo,
+.vison-mision-parrafo {
     text-align: justify;
 }
 
