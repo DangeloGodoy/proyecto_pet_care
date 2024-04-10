@@ -750,7 +750,7 @@ header {
         border-radius: 7px;
         background: rgb(239, 239, 239);
         width: 250px;
-        height: 200px;
+        height: 170px;
         transition-duration: 0.5s;
     }
 
@@ -811,7 +811,7 @@ header {
         border-radius: 7px;
         background: rgb(239, 239, 239);
         width: 200px;
-        height: 150px;
+        height: 130px;
         transition-duration: 0.5s;
     }
 
@@ -871,7 +871,7 @@ header {
         flex-direction: column;
         border-radius: 7px;
         background: rgb(239, 239, 239);
-        width: 120px;
+        width: 150px;
         height: 110px;
         transition-duration: 0.5s;
     }
@@ -932,7 +932,7 @@ header {
         flex-direction: column;
         border-radius: 7px;
         background: rgb(239, 239, 239);
-        width: 100px;
+        width: 150px;
         height: 93px;
         transition-duration: 0.5s;
     }
