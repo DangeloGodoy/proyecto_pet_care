@@ -332,8 +332,6 @@ header {
 }
 
 @media(max-width: 1024px) {
-    .footer {}
-
     .footer-logo {
         width: 75px;
         height: 75px;
