@@ -187,10 +187,10 @@ header {
     }
 
     .navegador-link {
-        width: 30px;
+        width: 20px;
         height: 10px;
-        padding: 3px;
-        font-size: 5px;
+        padding: 0px;
+        font-size: 3.5px;
     }
 
     .logo {
@@ -207,17 +207,17 @@ header {
     }
 
     .urgencia-servicio {
-        font-size: 10px;
+        font-size: 7.5px;
     }
 
     .urgencia-atencion {
         padding: 0px 3px;
-        font-size: 6px;
+        font-size: 5px;
     }
 
     .urgencia-celular {
         padding: 1.5px 3px;
-        font-size: 5px;
+        font-size: 3.5px;
     }
 }
 
@@ -616,15 +616,25 @@ header {
 
 /* pagina servicios */
 
-.descripción-servicios {
+.servicios {
     display: flex;
     flex-direction: column;
-    padding: 30px 390px;
+    gap: 30px;
+    align-items: center;
 }
 
-.nuestros-servicios {
-    padding: 20px 0px;
+.servicio-descripción {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding-top: 15px;
+    height: auto;
+    transition-duration: 0.5s;
+}
+
+.servicio-descripción-parrafo {
     text-align: justify;
+    padding-top: 20px;
 }
 
 .material-symbols-outlined {
@@ -638,16 +648,18 @@ header {
 
 .contenedor-servicios {
     display: flex;
-    justify-content: space-between;
-    padding: 0px 390px;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.servicios {
+.servicio {
     display: flex;
     flex-direction: column;
     border-radius: 7px;
     background: rgb(239, 239, 239);
     width: 250px;
+    height: 200px;
     transition-duration: 0.5s;
 }
 
@@ -698,6 +710,250 @@ header {
     list-style: none;
     padding: 1px 7px;
     font-size: 15px;
+}
+
+@media(max-width: 1024px) {
+    .servicio-descripción-titulo {
+        font-size: 18px;
+    }
+
+    .servicios {
+        gap: 30px;
+    }
+
+    .servicio-descripción {
+        padding-top: 10px;
+        width: 700px;
+    }
+
+    .servicio-descripción-parrafo {
+        font-size: 13px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 30;
+        font-size: 50px;
+    }
+
+    .contenedor-servicios {
+        gap: 20px;
+        width: 700px;
+    }
+
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        background: rgb(239, 239, 239);
+        width: 250px;
+        height: 200px;
+        transition-duration: 0.5s;
+    }
+
+    .servicio-1 {
+        padding: 5px 10px;
+    }
+
+    .servicio-2 {
+        padding: 10px
+    }
+
+    .titulo-servicio {
+        font-size: 18px;
+    }
+
+    .lista-servicio {
+        list-style: none;
+        padding: 1px 7px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 768px) {
+    .servicio-descripción-titulo {
+        font-size: 15px;
+    }
+
+    .servicios {
+        gap: 30px;
+    }
+
+    .servicio-descripción {
+        padding-top: 10px;
+        width: 550px;
+    }
+
+    .servicio-descripción-parrafo {
+        font-size: 10px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 30;
+        font-size: 40px;
+    }
+
+    .contenedor-servicios {
+        gap: 20px;
+        width: 550px;
+    }
+
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        background: rgb(239, 239, 239);
+        width: 200px;
+        height: 150px;
+        transition-duration: 0.5s;
+    }
+
+    .servicio-1 {
+        padding: 5px 10px 0px 10px;
+    }
+
+    .servicio-2 {
+        padding: 8px
+    }
+
+    .titulo-servicio {
+        font-size: 15px;
+    }
+
+    .lista-servicio {
+        list-style: none;
+        padding: 1px 5px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 580px) {
+    .servicio-descripción-titulo {
+        font-size: 13px;
+    }
+
+    .servicios {
+        gap: 30px;
+    }
+
+    .servicio-descripción {
+        padding-top: 10px;
+        width: 300px;
+    }
+
+    .servicio-descripción-parrafo {
+        font-size: 8px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 30;
+        font-size: 30px;
+    }
+
+    .contenedor-servicios {
+        gap: 20px;
+        width: 300px;
+    }
+
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        background: rgb(239, 239, 239);
+        width: 120px;
+        height: 110px;
+        transition-duration: 0.5s;
+    }
+
+    .servicio-1 {
+        padding: 5px 10px 0px 10px;
+    }
+
+    .servicio-2 {
+        padding: 8px
+    }
+
+    .titulo-servicio {
+        font-size: 13px;
+    }
+
+    .lista-servicio {
+        list-style: none;
+        padding: 1px 5px;
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 320px) {
+    .servicio-descripción-titulo {
+        font-size: 10px;
+    }
+
+    .servicios {
+        gap: 30px;
+    }
+
+    .servicio-descripción {
+        padding-top: 10px;
+        width: 250px;
+    }
+
+    .servicio-descripción-parrafo {
+        font-size: 6px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 300,
+            'GRAD' 0,
+            'opsz' 30;
+        font-size: 20px;
+    }
+
+    .contenedor-servicios {
+        gap: 20px;
+        width: 250px;
+    }
+
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        border-radius: 7px;
+        background: rgb(239, 239, 239);
+        width: 100px;
+        height: 93px;
+        transition-duration: 0.5s;
+    }
+
+    .servicio-1 {
+        padding: 5px 10px 0px 10px;
+    }
+
+    .servicio-2 {
+        padding: 8px
+    }
+
+    .titulo-servicio {
+        font-size: 10px;
+    }
+
+    .lista-servicio {
+        list-style: none;
+        padding: 1px 5px;
+        font-size: 6px;
+    }
 }
 
 /* configuracion responsive */
