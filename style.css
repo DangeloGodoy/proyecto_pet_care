@@ -14,6 +14,9 @@ body {
     min-height: 100vh;
 }
 
+ul {
+    padding: 0px;
+}
 /* Config Header */
 header {
     background-color: rgb(220, 220, 220);
@@ -22,7 +25,7 @@ header {
     width: 100%;
     height: 200px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
     transition-duration: 1s;
 }
@@ -52,14 +55,14 @@ header {
 .navegador-link {
     width: 100px;
     height: 30px;
-    padding: 10px;
     font-size: 13px;
     text-decoration: none;
     color: white;
     background: gray;
     border-radius: 10px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     transition-duration: 0.8s;
 }
@@ -79,26 +82,26 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 250px;
+    width: 360px;
 }
 
 .urgencia-servicio {
     color: red;
-    padding: 3px;
     font-size: 22px;
     transition-duration: 0.8s;
+    font-weight: bold;
 }
 
 .urgencia-atencion {
     color: rgb(254, 97, 97);
-    padding: 3px;
     transition-duration: 0.8s;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .urgencia-celular {
     font-size: 13px;
     color: rgb(75, 74, 74);
-    padding: 3px;
     transition-duration: 0.8s;
     font-weight: normal;
 }
@@ -108,8 +111,12 @@ header {
         height: 160px;
     }
 
+    .navegador {
+        gap: 8px;
+    }
+
     .navegador-link {
-        width: 80px;
+        width: 70px;
         height: 25px;
         padding: 10px;
         font-size: 10px;
@@ -125,15 +132,14 @@ header {
     }
 
     .urgencia {
-        width: 150px;
+        width: 250px;
     }
 
     .urgencia-servicio {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .urgencia-atencion {
-        padding: 3px;
         font-size: 10px;
     }
 
@@ -147,8 +153,12 @@ header {
         height: 120px;
     }
 
+    .navegador {
+        gap: 5px;
+    }
+
     .navegador-link {
-        width: 60px;
+        width: 55px;
         height: 18px;
         padding: 10px;
         font-size: 8px;
@@ -164,15 +174,14 @@ header {
     }
 
     .urgencia {
-        width: 100px;
+        width: 150px;
     }
 
     .urgencia-servicio {
-        font-size: 13px;
+        font-size: 9px;
     }
 
     .urgencia-atencion {
-        padding: 3px;
         font-size: 8px;
     }
 
@@ -186,11 +195,14 @@ header {
         height: 80px;
     }
 
+    .navegador {
+        gap: 8px;
+    }
     .navegador-link {
-        width: 20px;
-        height: 10px;
+        width: 25px;
+        height: 13px;
         padding: 0px;
-        font-size: 3.5px;
+        font-size: 4px;
     }
 
     .logo {
@@ -203,7 +215,7 @@ header {
     }
 
     .urgencia {
-        width: 60px;
+        width: 150px;
     }
 
     .urgencia-servicio {
@@ -211,12 +223,10 @@ header {
     }
 
     .urgencia-atencion {
-        padding: 0px 3px;
         font-size: 5px;
     }
 
     .urgencia-celular {
-        padding: 1.5px 3px;
         font-size: 3.5px;
     }
 }
@@ -248,20 +258,18 @@ header {
     }
 
     .urgencia {
-        width: 30px;
+        width: 80px;
     }
 
     .urgencia-servicio {
-        font-size: 5px;
+        font-size: 4px;
     }
 
     .urgencia-atencion {
-        padding: 0px 3px;
         font-size: 4px;
     }
 
     .urgencia-celular {
-        padding: 1.5px 3px;
         font-size: 3px;
     }
 }
@@ -309,6 +317,7 @@ header {
     padding: 3px;
     font-size: 15px;
     transition-duration: 0.5s;
+    font-weight: bold;
 }
 
 .footer-urgen-atencion {
@@ -436,6 +445,7 @@ header {
     font-size: 24px;
     color: rgb(43, 43, 66);
     transition-duration: .8s;
+    font-weight: bold;
 }
 
 .contacto-subtitulo {
@@ -632,6 +642,10 @@ header {
     transition-duration: 0.5s;
 }
 
+.servicio-descripción-titulo,.titulo-servicio {
+    font-weight: bold;
+}
+
 .servicio-descripción-parrafo {
     text-align: justify;
     padding-top: 20px;
@@ -712,6 +726,18 @@ header {
     font-size: 15px;
 }
 
+.carusel {
+    padding: 30px 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dimension {
+    width: 800px;
+}
+
 @media(max-width: 1024px) {
     .servicio-descripción-titulo {
         font-size: 18px;
@@ -771,6 +797,10 @@ header {
         padding: 1px 7px;
         font-size: 13px;
     }
+
+    .dimension {
+        width: 760px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -811,7 +841,7 @@ header {
         border-radius: 7px;
         background: rgb(239, 239, 239);
         width: 200px;
-        height: 130px;
+        height: 150px;
         transition-duration: 0.5s;
     }
 
@@ -820,7 +850,7 @@ header {
     }
 
     .servicio-2 {
-        padding: 8px
+        padding-left: 8px
     }
 
     .titulo-servicio {
@@ -831,6 +861,10 @@ header {
         list-style: none;
         padding: 1px 5px;
         font-size: 10px;
+    }
+
+    .dimension {
+        width: 570px;
     }
 }
 
@@ -872,7 +906,7 @@ header {
         border-radius: 7px;
         background: rgb(239, 239, 239);
         width: 150px;
-        height: 110px;
+        height: 125px;
         transition-duration: 0.5s;
     }
 
@@ -881,7 +915,7 @@ header {
     }
 
     .servicio-2 {
-        padding: 8px
+        padding-left: 8px
     }
 
     .titulo-servicio {
@@ -892,6 +926,10 @@ header {
         list-style: none;
         padding: 1px 5px;
         font-size: 8px;
+    }
+
+    .dimension {
+        width: 310px;
     }
 }
 
@@ -942,7 +980,7 @@ header {
     }
 
     .servicio-2 {
-        padding: 8px
+        padding: 1px
     }
 
     .titulo-servicio {
@@ -954,15 +992,19 @@ header {
         padding: 1px 5px;
         font-size: 6px;
     }
+
+    .dimension {
+        width: 250px;
+    }
 }
 
 /* pagina nosotros */
 
 .imagenes-nosotros {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
     justify-content: center;
-    align-items: center;
-    padding: 30px;
+    padding: 20px 0px;
 }
 
 .imagenes-nosotros-imagen {
@@ -999,6 +1041,7 @@ header {
 .vison-mision-titulo {
     padding: 10px 0px;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .nuestra-clinica-parrafo,
