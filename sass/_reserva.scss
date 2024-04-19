@@ -1,0 +1,68 @@
+.contenedor-reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.reserva-titulo {
+    font-size: $titulos;
+    color: $color-secundario;
+    padding-top: 30px;
+}
+
+.reserva {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva-medico-doctor {
+    display: flex;
+    flex-direction: column;
+}
+
+.reserva-medico {
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid $color-secundario;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.reserva-medico-img {
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid $color-secundario;
+}
+
+.reserva-medico-nombre {
+    font-size: $titulos;
+    color: $color-secundario;
+}
+
+.reserva-medico-disponibilidad {
+    font-size: $parrafos;
+    color: $color-secundario;
+}
+
+.reserva-medico-boton {
+    width: 200px;
+    padding: 5px 0px;
+    border: none;
+    background-color: $color-background-2;
+    transition-duration: .5s;
+    color: $color-contraste-1;
+    border-radius: 5px;
+    &:hover {
+        background-color: $color-background;
+        color: $color-primario;
+    }
+}
+
+@media (max-width:640px){
+    .reserva-medico{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+    }
+}

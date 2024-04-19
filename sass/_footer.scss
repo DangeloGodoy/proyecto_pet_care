@@ -1,0 +1,79 @@
+/* Config footer */
+
+.footer {
+    background:$color-background;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 30px;
+}
+
+.footer-logo-page {
+    width: inherit;
+    height: inherit;
+    mix-blend-mode: darken;
+}
+
+.footer-urgencia {
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+}
+
+.footer-urgencia-emergencia {
+    color: $color-primario;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer-urgencia-atencion {
+    color: $color-secundario;
+    font-size: 10px;
+}
+
+.footer-copy {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-copy-copyright,.urgencia-copyright {
+    color: rgb(63, 63, 63);
+    width: auto;
+    font-size: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:450px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer-logo{
+        padding: 0;
+    }
+    .footer-urgencia {
+        align-items: center;
+        padding: 0;
+    }
+}

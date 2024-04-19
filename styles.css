@@ -1,0 +1,594 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Config Header */
+header {
+  height: 120px;
+}
+
+.logo {
+  width: 160px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-page {
+  width: 120px;
+  height: 120px;
+  mix-blend-mode: darken;
+  transition-duration: 1s;
+}
+
+.urgencia {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 360px;
+}
+
+.urgencia-2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 360px;
+  padding: 0px 0px 10px 10px;
+}
+
+.urgencia-servicio {
+  color: #404040;
+  font-size: 22px;
+  transition-duration: 0.8s;
+  font-weight: bold;
+}
+
+.urgencia-servicio-2 {
+  color: #404040;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.urgencia-atencion,
+.urgencia-atencion-2 {
+  color: #595959;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.urgencia-celular {
+  font-size: 13px;
+  color: rgb(75, 74, 74);
+  font-weight: normal;
+}
+
+.urgencia-celular-2 {
+  font-size: 11px;
+  color: #F2F2F2;
+  font-weight: normal;
+}
+
+.height-esp {
+  height: 350px;
+  overflow-y: hidden;
+}
+
+.bk-nav {
+  background-color: #D9D9D9;
+}
+
+.icon-menu {
+  display: flex;
+  border: 0;
+  background-color: gray;
+  border-radius: 6px;
+  padding: 0;
+  box-shadow: -4px 6px 4px rgba(50, 50, 50, 0.92);
+  transition-duration: 0.5s;
+}
+.icon-menu:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.icon-menu-size {
+  color: black;
+  font-size: 50px;
+  transition-duration: 0.5s;
+}
+.icon-menu-size:hover {
+  color: rgb(186, 186, 186);
+}
+
+.bk-bar-lat {
+  background-color: #bdbcbc;
+}
+
+.offcanvas-titulo {
+  font-weight: bolder;
+  color: #404040;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  color: #595959;
+  transition-duration: 0.1s;
+  padding: 8px;
+  display: block;
+  font-weight: 600;
+}
+.nav-item-link:hover {
+  color: #404040;
+}
+
+.actual {
+  color: #F2F2F2;
+}
+
+.offcanvas-titulo {
+  font-size: 26px;
+  padding-top: 5px;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 210px;
+  }
+  .container-fluid {
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+  }
+  .icon-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .urgencia-servicio {
+    font-size: 18px;
+  }
+  .urgencia-atencion {
+    font-size: 14px;
+  }
+  .urgencia-celular {
+    font-size: 10px;
+  }
+}
+/* Config footer */
+.footer {
+  background: #D9D9D9;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-items: center;
+  padding-left: 30px;
+}
+
+.footer-logo-page {
+  width: inherit;
+  height: inherit;
+  mix-blend-mode: darken;
+}
+
+.footer-urgencia {
+  display: flex;
+  align-items: flex-start;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.footer-urgencia-emergencia {
+  color: #404040;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.footer-urgencia-atencion {
+  color: #595959;
+  font-size: 10px;
+}
+
+.footer-copy {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-copy-copyright, .urgencia-copyright {
+  color: rgb(63, 63, 63);
+  width: auto;
+  font-size: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .footer-logo {
+    padding: 0;
+  }
+  .footer-urgencia {
+    align-items: center;
+    padding: 0;
+  }
+}
+/* pagina contacto */
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contacto-titulo {
+  font-size: 33px;
+  color: #404040;
+  transition-duration: 0.8s;
+  font-weight: bold;
+}
+
+.contacto-subtitulo {
+  font-size: 16px;
+  color: #595959;
+  font-weight: normal;
+  padding: 3px 0px;
+  transition-duration: 0.8s;
+}
+
+.contacto-formulario,
+.contacto-ubicacion {
+  width: 500px;
+  padding: 20px;
+  transition-duration: 0.8s;
+}
+
+.form-contacto {
+  margin: 20px auto 40px auto;
+}
+
+.form-contacto-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.form-contacto-label,
+.form-contacto-input,
+.form-contacto-select {
+  font-size: 16px;
+  transition-duration: 0.8s;
+}
+
+.form-boton {
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #bdbcbc;
+  transition-duration: 0.5s;
+  color: #F2F2F2;
+  border-radius: 5px;
+}
+.form-boton:hover {
+  background-color: #D9D9D9;
+  color: #404040;
+}
+
+.contacto-ubicacion-map {
+  margin: 20px auto 40px auto;
+  width: 100%;
+  height: 356px;
+  border: 1px solid #595959;
+}
+
+/* pagina servicios */
+.servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.servicio-descripción {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding-top: 30px;
+}
+
+.servicio-descripción-titulo,
+.titulo-servicio {
+  font-weight: bold;
+  font-size: 33px;
+}
+
+.servicio-descripción-parrafo {
+  font-size: 16px;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 30;
+}
+
+.servicio-icono {
+  font-size: 60px;
+}
+
+.contenedor-servicios {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  background: #d8d6d6;
+  width: 250px;
+  height: 200px;
+  transition-duration: 0.5s;
+}
+
+.color-1 {
+  border-top: 13px solid orangered;
+}
+.color-1:hover {
+  rotate: 8deg;
+}
+
+.color-2 {
+  border-top: 13px solid rgb(47, 47, 255);
+}
+.color-2:hover {
+  rotate: 8deg;
+}
+
+.color-3 {
+  border-top: 13px solid rgb(253, 232, 37);
+}
+.color-3:hover {
+  rotate: 8deg;
+}
+
+.servicio-1 {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.servicio-2 {
+  padding: 10px;
+}
+
+.titulo-servicio {
+  font-size: 20px;
+}
+.titulo-servicio:hover {
+  color: #F2F2F2;
+}
+
+.lista-servicio {
+  list-style: none;
+  padding: 1px 7px;
+  font-size: 15px;
+}
+
+.carusel {
+  padding: 30px 0px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dimension {
+  width: 800px;
+}
+
+@media (max-width: 800px) {
+  .servicio-descripción {
+    width: auto;
+    padding: 30px 10px;
+  }
+  .dimension {
+    width: auto;
+    padding: 0px 10px;
+  }
+}
+/* pagina nosotros */
+.imagenes-nosotros {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 20px 10px;
+}
+
+.imagenes-nosotros-imagen {
+  width: 420px;
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition-duration: 0.5s;
+}
+
+.contenedor-nuestra-clinica {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nuestra-clinica {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  padding: 10px 10px;
+  background: #d8d6d6;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+
+.vison-mision {
+  width: 420px;
+  transition-duration: 0.5s;
+}
+
+.nuestra-clinica-titulo,
+.vison-mision-titulo {
+  padding: 10px 0px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.nuestra-clinica-parrafo,
+.vison-mision-parrafo {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.vison-mision-parrafo {
+  padding: 10px;
+}
+
+@media (max-width: 950px) {
+  .imagenes-nosotros {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 450px) {
+  .imagenes-nosotros-imagen {
+    width: 320px;
+    height: 210px;
+  }
+}
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inicio-bienvenida-titulo {
+  font-size: 33px;
+}
+
+.inicio-bienvenida-sub-titulo {
+  font-size: 16px;
+}
+
+.contenedor-reserva {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.reserva-titulo {
+  font-size: 33px;
+  color: #595959;
+  padding-top: 30px;
+}
+
+.reserva {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserva-medico-doctor {
+  display: flex;
+  flex-direction: column;
+}
+
+.reserva-medico {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #595959;
+  padding: 20px 0px;
+  align-items: center;
+}
+
+.reserva-medico-img {
+  width: 250px;
+  border-radius: 10px;
+  border: 1px solid #595959;
+}
+
+.reserva-medico-nombre {
+  font-size: 33px;
+  color: #595959;
+}
+
+.reserva-medico-disponibilidad {
+  font-size: 16px;
+  color: #595959;
+}
+
+.reserva-medico-boton {
+  width: 200px;
+  padding: 5px 0px;
+  border: none;
+  background-color: #bdbcbc;
+  transition-duration: 0.5s;
+  color: #F2F2F2;
+  border-radius: 5px;
+}
+.reserva-medico-boton:hover {
+  background-color: #D9D9D9;
+  color: #404040;
+}
+
+@media (max-width: 640px) {
+  .reserva-medico {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+}
+* {
+  font-family: "Montserrat", "Arial";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  padding-bottom: 120px;
+  min-height: 100vh;
+  background: #F2F2F2;
+}
+
+ul {
+  padding: 0px;
+}
+
+main {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=styles.css.map */

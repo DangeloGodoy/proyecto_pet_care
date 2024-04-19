@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./sass/variables";
+@import "./sass/header";
+@import "./sass/footer";
+@import "./sass/contacto";
+@import "./sass/servicios";
+@import "./sass/nosotros";
+@import "./sass/inicio";
+@import "./sass/reserva";
+
+* {
+    font-family: 'Montserrat', 'Arial';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    padding-bottom: 120px;
+    min-height: 100vh;
+    background: $color-contraste-1;
+}
+
+ul {
+    padding: 0px;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+

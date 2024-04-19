@@ -1,0 +1,164 @@
+/* Config Header */
+header {
+    height: 120px;
+}
+
+.logo {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-page {
+    width: 120px;
+    height: 120px;
+    mix-blend-mode: darken;
+    transition-duration: 1s;
+}
+
+.urgencia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 360px;
+}
+
+.urgencia-2 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 360px;
+    padding: 0px 0px 10px 10px;
+}
+
+.urgencia-servicio {
+    color: $color-primario;
+    font-size: 22px;
+    transition-duration: 0.8s;
+    font-weight: bold;
+}
+
+.urgencia-servicio-2 {
+    color: $color-primario;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.urgencia-atencion,
+.urgencia-atencion-2 {
+    color: $color-secundario;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.urgencia-celular {
+    font-size: 13px;
+    color: rgb(75, 74, 74);
+    font-weight: normal;
+}
+
+.urgencia-celular-2 {
+    font-size: 11px;
+    color: $color-contraste-1;
+    font-weight: normal;
+}
+
+.height-esp {
+    height: 350px;
+    overflow-y: hidden;
+}
+
+.bk-nav {
+    background-color: $color-background;
+}
+
+.icon-menu {
+    display: flex;
+    border: 0;
+    background-color: gray;
+    border-radius: 6px;
+    padding: 0;
+    box-shadow: -4px 6px 4px rgba(50, 50, 50, 0.92);
+    ;
+    transition-duration: .5s;
+
+    &:hover {
+        background-color: rgb(100, 100, 100);
+    }
+}
+
+.icon-menu-size {
+    color: black;
+    font-size: 50px;
+    transition-duration: .5s;
+
+    &:hover {
+        color: rgb(186, 186, 186);
+    }
+}
+
+.bk-bar-lat {
+    background-color: $color-background-2;
+}
+
+.offcanvas-titulo {
+    font-weight: bolder;
+    color: $color-primario;
+}
+
+.nav-item-link {
+    text-decoration: none;
+    color: $color-secundario;
+    transition-duration: .1s;
+    padding: 8px;
+    display: block;
+    font-weight: 600;
+
+    &:hover {
+        color: $color-primario
+    }
+}
+
+.actual {
+    color: $color-contraste-1;
+}
+
+.offcanvas-titulo {
+    font-size: 26px;
+    padding-top: 5px;
+}
+
+@media (max-width:600px) {
+    header {
+        height: 210px;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+        align-content: center;
+    }
+
+    .icon-menu {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .urgencia-servicio {
+        font-size: 18px;
+    }
+
+    .urgencia-atencion {
+        font-size: 14px;
+    }
+
+    .urgencia-celular {
+        font-size: 10px;
+    }
+}

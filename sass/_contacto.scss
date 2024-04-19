@@ -1,0 +1,68 @@
+/* pagina contacto */
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contacto-titulo {
+    font-size: $titulos;
+    color: $color-primario;
+    transition-duration: .8s;
+    font-weight: bold;
+}
+
+.contacto-subtitulo {
+    font-size: $parrafos;
+    color: $color-secundario;
+    font-weight: normal;
+    padding: 3px 0px;
+    transition-duration: .8s;
+}
+
+.contacto-formulario,
+.contacto-ubicacion {
+    width: 500px;
+    padding: 20px;
+    transition-duration: .8s;
+}
+
+.form-contacto {
+    margin: 20px auto 40px auto;
+}
+
+.form-contacto-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.form-contacto-label,
+.form-contacto-input,
+.form-contacto-select {
+    font-size: $parrafos;
+    transition-duration: .8s;
+}
+
+.form-boton {
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: $color-background-2;
+    transition-duration: .5s;
+    color: $color-contraste-1;
+    border-radius: 5px;
+    &:hover {
+        background-color: $color-background;
+        color: $color-primario;
+    }
+}
+
+.contacto-ubicacion-map {
+    margin: 20px auto 40px auto;
+    width: 100%;
+    height: 356px;
+    border: 1px solid $color-secundario;
+}

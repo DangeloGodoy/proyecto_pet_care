@@ -1,0 +1,69 @@
+/* pagina nosotros */
+
+.imagenes-nosotros {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+}
+
+.imagenes-nosotros-imagen {
+    width: 420px;
+    height: 310px;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+
+.contenedor-nuestra-clinica {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nuestra-clinica {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    padding: 10px 10px;
+    background: $color-terciario;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.vison-mision {
+    width: 420px;
+    transition-duration: 0.5s;
+}
+
+.nuestra-clinica-titulo,
+.vison-mision-titulo {
+    padding: 10px 0px;
+    font-size: $titulos;
+    font-weight: bold;
+}
+
+.nuestra-clinica-parrafo,
+.vison-mision-parrafo {
+    text-align: justify;
+    font-size: $parrafos;
+}
+
+.vison-mision-parrafo {
+    padding: 10px;
+}
+
+@media (max-width:950px) {
+    .imagenes-nosotros {
+        gap: 5px;
+        flex-wrap: wrap;
+    } 
+}
+
+@media (max-width:450px) {
+    .imagenes-nosotros-imagen {
+        width: 320px;
+        height: 210px;
+    }
+}
