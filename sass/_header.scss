@@ -79,7 +79,7 @@ header {
 .icon-menu {
     display: flex;
     border: 0;
-    background-color: gray;
+    background-color: $color-background-2;
     border-radius: 6px;
     padding: 0;
     box-shadow: -4px 6px 4px rgba(50, 50, 50, 0.92);
@@ -87,17 +87,17 @@ header {
     transition-duration: .5s;
 
     &:hover {
-        background-color: rgb(100, 100, 100);
+        background-color: $color-secundario;
     }
 }
 
 .icon-menu-size {
-    color: black;
+    color: $color-primario;
     font-size: 50px;
     transition-duration: .5s;
 
     &:hover {
-        color: rgb(186, 186, 186);
+        color: $color-contraste-1;
     }
 }
 

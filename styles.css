@@ -81,23 +81,23 @@ header {
 .icon-menu {
   display: flex;
   border: 0;
-  background-color: gray;
+  background-color: #bdbcbc;
   border-radius: 6px;
   padding: 0;
   box-shadow: -4px 6px 4px rgba(50, 50, 50, 0.92);
   transition-duration: 0.5s;
 }
 .icon-menu:hover {
-  background-color: rgb(100, 100, 100);
+  background-color: #595959;
 }
 
 .icon-menu-size {
-  color: black;
+  color: #404040;
   font-size: 50px;
   transition-duration: 0.5s;
 }
 .icon-menu-size:hover {
-  color: rgb(186, 186, 186);
+  color: #F2F2F2;
 }
 
 .bk-bar-lat {
